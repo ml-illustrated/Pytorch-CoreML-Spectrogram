@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74568D0D2484589000210F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74568D0C2484589000210F85 /* AppDelegate.swift */; };
+		74568D0F2484589000210F85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74568D0E2484589000210F85 /* SceneDelegate.swift */; };
+		74568D112484589000210F85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74568D102484589000210F85 /* ViewController.swift */; };
+		74568D142484589000210F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74568D122484589000210F85 /* Main.storyboard */; };
+		74568D162484589200210F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74568D152484589200210F85 /* Assets.xcassets */; };
+		74568D192484589200210F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74568D172484589200210F85 /* LaunchScreen.storyboard */; };
+		74568D242484589200210F85 /* Pytorch_CoreML_SpectrogramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74568D232484589200210F85 /* Pytorch_CoreML_SpectrogramTests.swift */; };
+		74568D2F248461F100210F85 /* bonjour.wav in Resources */ = {isa = PBXBuildFile; fileRef = 74568D2E248461F100210F85 /* bonjour.wav */; };
+		74568D362484691C00210F85 /* ConvertSpectrogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74568D352484691C00210F85 /* ConvertSpectrogram.swift */; };
+		74568D372484691C00210F85 /* ConvertSpectrogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74568D352484691C00210F85 /* ConvertSpectrogram.swift */; };
+		74568D392484693000210F85 /* DrawSpecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74568D382484693000210F85 /* DrawSpecView.swift */; };
+		74568D3B248472FD00210F85 /* melspec_out.bonjour.json in Resources */ = {isa = PBXBuildFile; fileRef = 74568D3A248472FD00210F85 /* melspec_out.bonjour.json */; };
+		74568D3D2484730C00210F85 /* wave__melspec.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 74568D3C2484730C00210F85 /* wave__melspec.mlmodel */; };
+		74568D3E2484730C00210F85 /* wave__melspec.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 74568D3C2484730C00210F85 /* wave__melspec.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74568D202484589200210F85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74568D012484589000210F85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74568D082484589000210F85;
+			remoteInfo = "Pytorch-CoreML-Spectrogram";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		74568D092484589000210F85 /* Pytorch-CoreML-Spectrogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pytorch-CoreML-Spectrogram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74568D0C2484589000210F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74568D0E2484589000210F85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		74568D102484589000210F85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74568D132484589000210F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74568D152484589200210F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74568D182484589200210F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74568D1A2484589200210F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74568D1F2484589200210F85 /* Pytorch-CoreML-SpectrogramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pytorch-CoreML-SpectrogramTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74568D232484589200210F85 /* Pytorch_CoreML_SpectrogramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pytorch_CoreML_SpectrogramTests.swift; sourceTree = "<group>"; };
+		74568D252484589200210F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74568D2E248461F100210F85 /* bonjour.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bonjour.wav; sourceTree = "<group>"; };
+		74568D352484691C00210F85 /* ConvertSpectrogram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertSpectrogram.swift; sourceTree = "<group>"; };
+		74568D382484693000210F85 /* DrawSpecView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawSpecView.swift; sourceTree = "<group>"; };
+		74568D3A248472FD00210F85 /* melspec_out.bonjour.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = melspec_out.bonjour.json; sourceTree = "<group>"; };
+		74568D3C2484730C00210F85 /* wave__melspec.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = wave__melspec.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74568D062484589000210F85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74568D1C2484589200210F85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74568D002484589000210F85 = {
+			isa = PBXGroup;
+			children = (
+				74568D0B2484589000210F85 /* Pytorch-CoreML-Spectrogram */,
+				74568D222484589200210F85 /* Pytorch-CoreML-SpectrogramTests */,
+				74568D0A2484589000210F85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74568D0A2484589000210F85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74568D092484589000210F85 /* Pytorch-CoreML-Spectrogram.app */,
+				74568D1F2484589200210F85 /* Pytorch-CoreML-SpectrogramTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74568D0B2484589000210F85 /* Pytorch-CoreML-Spectrogram */ = {
+			isa = PBXGroup;
+			children = (
+				74568D0C2484589000210F85 /* AppDelegate.swift */,
+				74568D0E2484589000210F85 /* SceneDelegate.swift */,
+				74568D102484589000210F85 /* ViewController.swift */,
+				74568D352484691C00210F85 /* ConvertSpectrogram.swift */,
+				74568D3C2484730C00210F85 /* wave__melspec.mlmodel */,
+				74568D122484589000210F85 /* Main.storyboard */,
+				74568D382484693000210F85 /* DrawSpecView.swift */,
+				74568D152484589200210F85 /* Assets.xcassets */,
+				74568D172484589200210F85 /* LaunchScreen.storyboard */,
+				74568D1A2484589200210F85 /* Info.plist */,
+			);
+			path = "Pytorch-CoreML-Spectrogram";
+			sourceTree = "<group>";
+		};
+		74568D222484589200210F85 /* Pytorch-CoreML-SpectrogramTests */ = {
+			isa = PBXGroup;
+			children = (
+				74568D232484589200210F85 /* Pytorch_CoreML_SpectrogramTests.swift */,
+				74568D2E248461F100210F85 /* bonjour.wav */,
+				74568D3A248472FD00210F85 /* melspec_out.bonjour.json */,
+				74568D252484589200210F85 /* Info.plist */,
+			);
+			path = "Pytorch-CoreML-SpectrogramTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74568D082484589000210F85 /* Pytorch-CoreML-Spectrogram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74568D282484589200210F85 /* Build configuration list for PBXNativeTarget "Pytorch-CoreML-Spectrogram" */;
+			buildPhases = (
+				74568D052484589000210F85 /* Sources */,
+				74568D062484589000210F85 /* Frameworks */,
+				74568D072484589000210F85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pytorch-CoreML-Spectrogram";
+			productName = "Pytorch-CoreML-Spectrogram";
+			productReference = 74568D092484589000210F85 /* Pytorch-CoreML-Spectrogram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74568D1E2484589200210F85 /* Pytorch-CoreML-SpectrogramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74568D2B2484589200210F85 /* Build configuration list for PBXNativeTarget "Pytorch-CoreML-SpectrogramTests" */;
+			buildPhases = (
+				74568D1B2484589200210F85 /* Sources */,
+				74568D1C2484589200210F85 /* Frameworks */,
+				74568D1D2484589200210F85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74568D212484589200210F85 /* PBXTargetDependency */,
+			);
+			name = "Pytorch-CoreML-SpectrogramTests";
+			productName = "Pytorch-CoreML-SpectrogramTests";
+			productReference = 74568D1F2484589200210F85 /* Pytorch-CoreML-SpectrogramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74568D012484589000210F85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Gerald;
+				TargetAttributes = {
+					74568D082484589000210F85 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					74568D1E2484589200210F85 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 74568D082484589000210F85;
+					};
+				};
+			};
+			buildConfigurationList = 74568D042484589000210F85 /* Build configuration list for PBXProject "Pytorch-CoreML-Spectrogram" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74568D002484589000210F85;
+			productRefGroup = 74568D0A2484589000210F85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74568D082484589000210F85 /* Pytorch-CoreML-Spectrogram */,
+				74568D1E2484589200210F85 /* Pytorch-CoreML-SpectrogramTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74568D072484589000210F85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74568D192484589200210F85 /* LaunchScreen.storyboard in Resources */,
+				74568D162484589200210F85 /* Assets.xcassets in Resources */,
+				74568D142484589000210F85 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74568D1D2484589200210F85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74568D2F248461F100210F85 /* bonjour.wav in Resources */,
+				74568D3B248472FD00210F85 /* melspec_out.bonjour.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74568D052484589000210F85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74568D112484589000210F85 /* ViewController.swift in Sources */,
+				74568D392484693000210F85 /* DrawSpecView.swift in Sources */,
+				74568D362484691C00210F85 /* ConvertSpectrogram.swift in Sources */,
+				74568D0D2484589000210F85 /* AppDelegate.swift in Sources */,
+				74568D0F2484589000210F85 /* SceneDelegate.swift in Sources */,
+				74568D3D2484730C00210F85 /* wave__melspec.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74568D1B2484589200210F85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74568D242484589200210F85 /* Pytorch_CoreML_SpectrogramTests.swift in Sources */,
+				74568D372484691C00210F85 /* ConvertSpectrogram.swift in Sources */,
+				74568D3E2484730C00210F85 /* wave__melspec.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74568D212484589200210F85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74568D082484589000210F85 /* Pytorch-CoreML-Spectrogram */;
+			targetProxy = 74568D202484589200210F85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74568D122484589000210F85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74568D132484589000210F85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74568D172484589200210F85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74568D182484589200210F85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74568D262484589200210F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74568D272484589200210F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74568D292484589200210F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6KE3UBBT4;
+				INFOPLIST_FILE = "Pytorch-CoreML-Spectrogram/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "my.testco.Pytorch-CoreML-Spectrogram";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74568D2A2484589200210F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6KE3UBBT4;
+				INFOPLIST_FILE = "Pytorch-CoreML-Spectrogram/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "my.testco.Pytorch-CoreML-Spectrogram";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		74568D2C2484589200210F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6KE3UBBT4;
+				INFOPLIST_FILE = "Pytorch-CoreML-SpectrogramTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "my.testco.Pytorch-CoreML-SpectrogramTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pytorch-CoreML-Spectrogram.app/Pytorch-CoreML-Spectrogram";
+			};
+			name = Debug;
+		};
+		74568D2D2484589200210F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6KE3UBBT4;
+				INFOPLIST_FILE = "Pytorch-CoreML-SpectrogramTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "my.testco.Pytorch-CoreML-SpectrogramTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pytorch-CoreML-Spectrogram.app/Pytorch-CoreML-Spectrogram";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74568D042484589000210F85 /* Build configuration list for PBXProject "Pytorch-CoreML-Spectrogram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74568D262484589200210F85 /* Debug */,
+				74568D272484589200210F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74568D282484589200210F85 /* Build configuration list for PBXNativeTarget "Pytorch-CoreML-Spectrogram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74568D292484589200210F85 /* Debug */,
+				74568D2A2484589200210F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74568D2B2484589200210F85 /* Build configuration list for PBXNativeTarget "Pytorch-CoreML-SpectrogramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74568D2C2484589200210F85 /* Debug */,
+				74568D2D2484589200210F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74568D012484589000210F85 /* Project object */;
+}
