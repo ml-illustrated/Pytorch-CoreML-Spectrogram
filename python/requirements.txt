@@ -1,6 +1,7 @@
 torch
 librosa
-torchlibrosa
+# torchlibrosa
+-e git://github.com/ml-illustrated/torchlibrosa.git#egg=torchlibrosa
 SoundFile
 onnx
 onnxruntime

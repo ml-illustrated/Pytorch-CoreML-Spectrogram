@@ -130,7 +130,7 @@ class WaveToLogmelSpectrogram(nn.Module):
         assert torch_output.shape == mlmodel_output.shape
 
         print( 'sum diff ', np.sum( np.abs( torch_output-mlmodel_output) ), np.max( np.abs( torch_output-mlmodel_output) ) )
-        # !!!!!!!!! assert np.allclose( torch_output, mlmodel_output, atol=1e-3, rtol=1e-5 )
+        assert np.allclose( torch_output, mlmodel_output, atol=2, rtol=2 ) # big tolerance due to log scale
             
         print( 'Successful MLModel conversion to %s!' % fn_mlmodel )
 

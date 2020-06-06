@@ -151,10 +151,40 @@ class Pytorch_CoreML_SpectrogramTests: XCTestCase {
 
     }
 
-    func testPerformanceExample() throws {
+    func test_inference_time() throws {
         // This is an example of a performance test case.
+        let model = wave__melspec()
+
+        let array_shape: [NSNumber] = [1, 12800]
+        let audioData = try! MLMultiArray(shape: array_shape, dataType: MLMultiArrayDataType.float32 )
+        let inputs: [String: Any] = [
+            "input.1": audioData,
+        ]
+        // container for ML Model inputs
+        let provider = try! MLDictionaryFeatureProvider(dictionary: inputs)
+
         self.measure {
             // Put the code you want to measure the time of here.
+            let N = 100
+            let start_time = CACurrentMediaTime()
+            let options = MLPredictionOptions()
+            // options.usesCPUOnly = true
+            for _ in 0..<N {
+                _ = try? model.model.prediction(
+                    from: provider,
+                    options: options
+                )
+            }
+            let elapsed = CACurrentMediaTime() - start_time
+            print( "avg inference time: \(elapsed/Double(N))")
+            /* simulator:
+                avg inference time: 0.011592097150278279
+                w/ CPUOnly: avg inference time: 0.011968133399495855
+               on iPhone XR
+                avg inference time: 0.003219694583094679
+                w/ CPUOnly: avg inference time: 0.003034873333526775
+
+             */
         }
     }
 

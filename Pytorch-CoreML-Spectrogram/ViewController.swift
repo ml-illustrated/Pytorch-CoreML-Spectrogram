@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     // set up for audio
     private let audioEngine = AVAudioEngine()
     // specify the audio samples format the CoreML model
-    let desiredAudioFormat: AVAudioFormat = {
+    private let desiredAudioFormat: AVAudioFormat = {
         let avAudioChannelLayout = AVAudioChannelLayout(layoutTag: kAudioChannelLayoutTag_Mono)!
         return AVAudioFormat(
             commonFormat: .pcmFormatFloat32,
@@ -30,10 +30,12 @@ class ViewController: UIViewController {
     }()
     
     // create a queue to do analysis on a separate thread
-    let analysisQueue = DispatchQueue(label: "com.myco.AnalysisQueue")
+    private let analysisQueue = DispatchQueue(label: "com.myco.AnalysisQueue")
     
     // instantiate our model
-    let model = wave__melspec()
+
+
+    var model : wave__melspec? = nil
     typealias NetworkInput = wave__melspecInput
     typealias NetworkOutput = wave__melspecOutput
 
@@ -46,10 +48,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        load_model()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         startAudioEngine()
+    }
+    
+    private func load_model() {
+        let config = MLModelConfiguration()
+        config.computeUnits = .all
+        do {
+            self.model = try wave__melspec( configuration: config )
+        } catch {
+            fatalError( "unable to load ML model!" )
+        }
+
     }
     
     // audio capture via microphone
@@ -151,7 +165,8 @@ class ViewController: UIViewController {
     
     
     func predict_provider(provider: MLDictionaryFeatureProvider ) {
-        if let outFeatures = try? self.model.model.prediction(from: provider) {
+
+        if let outFeatures = try? self.model?.model.prediction(from: provider) {
             // release the semaphore as soon as the model is done
             self.semaphore.signal()
 
